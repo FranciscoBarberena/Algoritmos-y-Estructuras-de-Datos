@@ -1,5 +1,4 @@
 package tp1.ejercicio1;
-// test for commit
 public class Enteros {
 	public static void imprimirRangoFor(int a,int b) {
 		for (int i = a; i<=b;i++) {
