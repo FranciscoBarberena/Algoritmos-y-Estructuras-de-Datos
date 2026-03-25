@@ -16,7 +16,7 @@ public class Enteros {
 	public static void imprimirRangoRecursivo(int a, int b) {
 		if (a<=b) {
 			System.out.print(a+"\n");
-			a++;
+			a+=1;
 			imprimirRangoRecursivo(a,b);
 		}
 			
