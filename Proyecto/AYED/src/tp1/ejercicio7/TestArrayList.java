@@ -4,6 +4,9 @@ import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import tp1.ejercicio3.Persona;
+import tp1.ejercicio3.Estudiante;
+
 public class TestArrayList {
 
 	public static void main(String[] args) {
@@ -17,11 +20,47 @@ public class TestArrayList {
 			System.out.println("Ingrese un numero para agregar a la secuencia (0 para terminar)");
 			numeroLeido = s.nextInt();
 		}
-		for (int i = 0;i<lista.size();i++) {
+                s.close();
+		for (int i = 0;i<lista.size();i++) { //Imprimir iterando sobre cada elemento
 			System.out.print(lista.get(i));
 		}
-		s.close();
-
+                System.out.println();
+                for (int i : lista){ //Opcion 2 para recorrer
+                    System.out.print(lista.get(i-1));
+                }
+                TestArrayList t = new TestArrayList();
+                t.crearLista();
+                
 	}
-
+        
+        public void crearLista(){
+         
+            List<Estudiante> lista1 = new ArrayList<>();
+            for (int i = 0;i<3;i++){
+                lista1.add(new Estudiante(i,"Calle 2","Estudiante","Generico","unMail@gmail.com"));
+            }
+            List<Estudiante> lista2 = new ArrayList<>();
+            lista2 = lista1;
+            System.out.println("LISTAS ANTES DE CAMBIAR EL NOMBRE DEL ESTUDIANTE 0");
+            System.out.println("------- LISTA 1 -------");
+            for (int i = 0;i<lista1.size();i++) { 
+			System.out.print(lista1.get(i).tusDatos());
+            }
+            System.out.println("------- LISTA 2 -------");
+            for (int i = 0;i<lista2.size();i++) { 
+			System.out.print(lista2.get(i).tusDatos());   
+            }
+            System.out.println("LISTAS DESPUES DE CAMBIAR EL NOMBRE DEL ESTUDIANTE 0");
+            lista1.get(0).setNombre("CAMBIE MI NOMBRE");
+            System.out.println("------- LISTA 1 -------");
+            for (int i = 0;i<lista1.size();i++) { 
+			System.out.print(lista1.get(i).tusDatos());
+            }
+            System.out.println("------- LISTA 2 -------");
+            for (int i = 0;i<lista2.size();i++) { 
+			System.out.print(lista2.get(i).tusDatos());   
+            }
+            System.out.println("----------------------");
+            System.out.println("CONCLUSIÓN: 'lista1 = lista2' hace que ambas variables apunten a la misma lista. Cambiar un elemento de una hace que cambie la otra, ya que ambas apuntan a la misma direccion de memoria.");
+        }
 }

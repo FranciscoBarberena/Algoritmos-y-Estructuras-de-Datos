@@ -18,9 +18,12 @@ public class Estudiante extends Persona{
     
     public String tusDatos(){
         String aux=super.tusDatos();
-        aux+= "\nComisión: "+this.getComision()+"\nDirección: "+this.getDireccion();
+        aux+= "\nComisión: "+this.getComision()+"\nDirección: "+this.getDireccion()+"\n";
         return aux;
     } 
+
+  
+    
 
     //Constructor
 
