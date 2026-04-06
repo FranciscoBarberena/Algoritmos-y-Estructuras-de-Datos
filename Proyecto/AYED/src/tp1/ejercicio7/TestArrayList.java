@@ -21,7 +21,9 @@ public class TestArrayList {
 			numeroLeido = s.nextInt();
 		}
                 s.close();
-		for (int i = 0;i<lista.size();i++) { //Imprimir iterando sobre cada elemento
+                ArrayList<Integer> listaArray = (ArrayList<Integer>) lista;
+                TestArrayList.esCapicua(listaArray);
+		/*for (int i = 0;i<lista.size();i++) { //Imprimir iterando sobre cada elemento
 			System.out.print(lista.get(i));
 		}
                 System.out.println();
@@ -29,7 +31,7 @@ public class TestArrayList {
                     System.out.print(lista.get(i-1));
                 }
                 TestArrayList t = new TestArrayList();
-                t.crearLista();
+                t.crearLista();*/
                 
 	}
         
@@ -62,5 +64,32 @@ public class TestArrayList {
             }
             System.out.println("----------------------");
             System.out.println("CONCLUSIÓN: 'lista1 = lista2' hace que ambas variables apunten a la misma lista. Cambiar un elemento de una hace que cambie la otra, ya que ambas apuntan a la misma direccion de memoria.");
+            Estudiante e = new Estudiante(2,"Calle 452","Estudiante","Generico","alumno@gmail.com");
+            TestArrayList.agregarEstudiante(lista1, e);
+            TestArrayList.agregarEstudiante(lista1, e);
+        }
+        public static boolean agregarEstudiante(List<Estudiante> L, Estudiante e){
+            boolean agrego = false;
+            if (!(L.contains(e))){
+                L.add(e);
+                agrego = true;
+            }
+            System.out.println(L.get(3).tusDatos());
+            
+            return agrego;
+        }
+        public static boolean esCapicua(ArrayList<Integer> lista){
+            boolean seguir = true;
+            int i = 0;
+            while((i<lista.size()) && (seguir)){
+                if (!(lista.get(i).equals(lista.get(lista.size()-i-1)))){
+                    seguir = false;
+                }
+                i= i+1;
+            }
+            if(seguir){
+                System.out.println("ES CAPICUA");
+            } else System.out.println("NO ES CAPICUA");
+            return seguir;
         }
 }
