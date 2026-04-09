@@ -23,7 +23,7 @@ public class TestArrayList {
                 s.close();
                 ArrayList<Integer> listaArray = (ArrayList<Integer>) lista;
                 TestArrayList.esCapicua(listaArray);
-		/*for (int i = 0;i<lista.size();i++) { //Imprimir iterando sobre cada elemento
+		for (int i = 0;i<lista.size();i++) { //Imprimir iterando sobre cada elemento
 			System.out.print(lista.get(i));
 		}
                 System.out.println();
@@ -31,7 +31,7 @@ public class TestArrayList {
                     System.out.print(lista.get(i-1));
                 }
                 TestArrayList t = new TestArrayList();
-                t.crearLista();*/
+                t.crearLista();
                 
 	}
         

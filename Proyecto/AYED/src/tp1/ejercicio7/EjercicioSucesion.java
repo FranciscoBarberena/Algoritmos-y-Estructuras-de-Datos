@@ -36,13 +36,11 @@ public class EjercicioSucesion {
     }
 
     public void invertirArrayList(ArrayList<Integer> lista) {
-        List<Integer> listaInvertida = new ArrayList<>();
-        ArrayList<Integer> listaInvertidaArray = (ArrayList<Integer>) listaInvertida;
-        for (int i = 0; i < lista.size(); i++) {
-            listaInvertidaArray.add(lista.get(lista.size() - i - 1));
+        if (lista != null && !lista.isEmpty()) {
+            Integer firstElem = lista.remove(0);
+            invertirArrayList(lista);
+            lista.add(firstElem);
         }
-        lista.clear();
-        lista.addAll(listaInvertida);
     }
 
     private int recorrer(Iterator<Integer> iterador, int suma) {
@@ -55,6 +53,7 @@ public class EjercicioSucesion {
     public int sumarLinkedList(LinkedList<Integer> lista) {
         Iterator<Integer> iterador = lista.iterator();
         int suma = 0;
+        
         return recorrer(iterador, suma);
 
     }

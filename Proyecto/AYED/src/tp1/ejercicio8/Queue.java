@@ -11,13 +11,14 @@ import java.util.List;
 /**
  *
  * @author Alejandra
+ * @param <T>
  */
 public class Queue<T> extends Sequence {
 
     protected List<T> data;
 
     public Queue() {
-        this.data = new ArrayList<T>();
+        this.data = new ArrayList<>();
     }
 
     public void enqueue(T dato) {
