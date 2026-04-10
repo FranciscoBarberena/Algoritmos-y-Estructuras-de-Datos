@@ -1,5 +1,7 @@
 package tp2.ejercicio4;
 
+import tp2.ejercicio1.BinaryTree;
+
 public class RedBinariaLlena {
 	
 	private BinaryTree<Integer> arbol;
