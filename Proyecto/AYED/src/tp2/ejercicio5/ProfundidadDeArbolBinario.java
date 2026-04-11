@@ -27,7 +27,8 @@ public class ProfundidadDeArbolBinario {
                         }
                         if (nodoActual.hasRightChild()) {
                             cola.enqueue(nodoActual.getRightChild());
-                        }                    }
+                        }
+                    }
                 }
                 prof += 1;
             }

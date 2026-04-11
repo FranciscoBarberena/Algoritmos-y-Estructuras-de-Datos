@@ -15,20 +15,20 @@ public class ParcialArboles {
     }
 
     public boolean isLeftTree(int num) {
-        BinaryTree<Integer> nodoNum = null;
+        BinaryTree<Integer> nodoNum;
         int nodosIzq = -1;
         int nodosDer = -1;
         if ((!(this.arbol == null) && (!this.arbol.isEmpty()))) {
             nodoNum = this.encontrarNum(this.arbol, num);
             if ((nodoNum != null) && (nodoNum.hasLeftChild())) {
                 nodosIzq = this.contarNodos(nodoNum.getLeftChild());
-                if (nodoNum.hasRightChild()){
+                if (nodoNum.hasRightChild()) {
                     nodosDer = this.contarNodos(nodoNum.getRightChild());
-                 
+
                 }
             }
         }
-        return(nodosIzq > nodosDer);
+        return (nodosIzq > nodosDer);
     }
 
     private BinaryTree<Integer> encontrarNum(BinaryTree<Integer> tree, int num) {
@@ -86,17 +86,17 @@ public class ParcialArboles {
 
         n7.addLeftChild(n23);
         n7.addRightChild(n6);
-        nMenos5.addLeftChild(n19); 
+        nMenos5.addLeftChild(n19);
 
         BinaryTree<Integer> nMenos3 = new BinaryTree<>(-3);
         BinaryTree<Integer> n55 = new BinaryTree<>(55);
         BinaryTree<Integer> n11 = new BinaryTree<>(11);
         BinaryTree<Integer> n4 = new BinaryTree<>(4);
 
-        n23.addLeftChild(nMenos3); 
+        n23.addLeftChild(nMenos3);
         n6.addLeftChild(n55);
         n6.addRightChild(n11);
-        n19.addRightChild(n4); 
+        n19.addRightChild(n4);
 
         BinaryTree<Integer> n18 = new BinaryTree<>(18);
 

@@ -58,37 +58,37 @@ public class Transformacion {
         n5.addRightChild(n7);
         n15.addLeftChild(n12);
         n15.addRightChild(n20);
-        
+
         BinaryTree<Integer> n13 = new BinaryTree<>(7);
         BinaryTree<Integer> n21 = new BinaryTree<>(8);
         n12.addLeftChild(n13);
         n12.addRightChild(n21);
         Queue<BinaryTree<Integer>> cola = new Queue<>();
         cola.enqueue(raiz);
-         BinaryTree<Integer> nodoActual;
+        BinaryTree<Integer> nodoActual;
         int tamano;
         if (raiz != null) {
             while (!cola.isEmpty()) {
                 tamano = cola.size();
                 for (int i = 0; i < tamano; i++) {
                     nodoActual = cola.dequeue();
-                    System.out.print(nodoActual.getData()+"   ");
+                    System.out.print(nodoActual.getData() + "   ");
                     if (nodoActual.hasLeftChild()) {
-                        
+
                         cola.enqueue(nodoActual.getLeftChild());
                     }
                     if (nodoActual.hasRightChild()) {
                         cola.enqueue(nodoActual.getRightChild());
                     }
                 }
-                System.out.println( );
+                System.out.println();
                 System.out.println("--------------------");
             }
         }
         Transformacion t = new Transformacion(raiz);
         BinaryTree<Integer> sumas = t.suma();
-        
-        System.out.println( );
+
+        System.out.println();
 
         cola.enqueue(sumas);
         if (sumas != null) {
@@ -96,16 +96,16 @@ public class Transformacion {
                 tamano = cola.size();
                 for (int i = 0; i < tamano; i++) {
                     nodoActual = cola.dequeue();
-                    System.out.print(nodoActual.getData()+"   ");
+                    System.out.print(nodoActual.getData() + "   ");
                     if (nodoActual.hasLeftChild()) {
-                        
+
                         cola.enqueue(nodoActual.getLeftChild());
                     }
                     if (nodoActual.hasRightChild()) {
                         cola.enqueue(nodoActual.getRightChild());
                     }
                 }
-                System.out.println( );
+                System.out.println();
                 System.out.println("--------------------");
             }
         }

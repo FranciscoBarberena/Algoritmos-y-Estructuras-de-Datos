@@ -1,6 +1,5 @@
 package tp2.ejercicio1;
 
-import java.util.LinkedList;
 import tp1.ejercicio8.Queue;
 
 public class BinaryTree<T> {
@@ -114,8 +113,6 @@ public class BinaryTree<T> {
         return mirrorTree;
 
     }
-
-    
 
     // 0<=n<=m
     public void entreNiveles(int n, int m) {
