@@ -1,4 +1,4 @@
-*Semana 		Actividad*
+**Semana 		Actividad**
 
 23/3 – 29/3 	TP1: El lenguaje Java, TAD pilas y colas, List y Tipos Genéricos (semana 1 de 2)
 
@@ -16,7 +16,7 @@
 
 
 
-*Parcial Módulo Árboles — sábado 9/5*
+**Parcial Módulo Árboles — sábado 9/5**
 
 
 
@@ -32,7 +32,7 @@
 
 
 
-*Parcial Módulos Grafos y Análisis de Algoritmos — sábado 13/6*
+**Parcial Módulos Grafos y Análisis de Algoritmos — sábado 13/6**
 
 
 
