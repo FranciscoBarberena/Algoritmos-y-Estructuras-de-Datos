@@ -5,7 +5,7 @@
  */
 package tp1.ejercicio8;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -18,7 +18,7 @@ public class Queue<T> extends Sequence {
     protected List<T> data;
 
     public Queue() {
-        this.data = new ArrayList<>();
+        this.data = new LinkedList<>();
     }
 
     public void enqueue(T dato) {
