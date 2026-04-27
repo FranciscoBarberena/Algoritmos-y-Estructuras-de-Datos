@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package tp3.ejercicio4;
+package tp3.ejercicio04;
 
 import java.util.List;
 import tp1.ejercicio8.Queue;

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package tp3.ejercicio9;
+package tp3.ejercicio09;
 
 import java.util.List;
 import tp3.GeneralTree;
