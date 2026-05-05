@@ -5,6 +5,7 @@
  */
 package tp3.ejercicio09;
 
+import java.util.ArrayList;
 import java.util.List;
 import tp3.GeneralTree;
 
@@ -23,22 +24,23 @@ public class ParcialArboles1 {
     }
 
     private static boolean recorrerArbol(GeneralTree<Integer> arbol) {
-        
-        if (arbol.isLeaf()){
+
+        if (arbol.isLeaf()) {
             return true;
         }
         List<GeneralTree<Integer>> children = arbol.getChildren();
         int min = Integer.MAX_VALUE;
-        
+
         for (GeneralTree<Integer> child : children) {
             boolean cumple = recorrerArbol(child);
             if (!cumple) {
                 return cumple;
-            } 
+            }
             if (child.getData() < min) {
                 min = child.getData();
             }
         }
         return min == arbol.getData();
     }
+
 }
