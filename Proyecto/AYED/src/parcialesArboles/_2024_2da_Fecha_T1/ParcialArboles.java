@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package parcialesArboles.segundaFechaDosMilVeinticuatro;
+package parcialesArboles._2024_2da_Fecha_T1;
 
 import tp2.ejercicio1.BinaryTree;
 
@@ -11,8 +11,8 @@ import tp2.ejercicio1.BinaryTree;
  *
  * @author Fran
  */
-public class ParcialArboles1 {
-    // Es la 2da fecha del parcial de 2024, tema 1 29/6/2024   
+public class ParcialArboles {
+
     BinaryTree<Integer> arbol;
     public BinaryTree<Integer> nuevoTree(){
         BinaryTree<Integer> nuevoArbol = new BinaryTree<>();
