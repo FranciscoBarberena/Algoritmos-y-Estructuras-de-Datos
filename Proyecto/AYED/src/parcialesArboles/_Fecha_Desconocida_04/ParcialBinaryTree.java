@@ -11,9 +11,14 @@ package parcialesArboles._Fecha_Desconocida_04;
  * @param <T>
  */
 public class ParcialBinaryTree<T> {
+    
+    // Variables de instancia propias de la clase BinaryTree (en papel creo que no haría falta escribirlas)
+    
     private T data;
     private ParcialBinaryTree<T> leftChild;
     private ParcialBinaryTree<T> rightChild;
+    
+    // Resolución en papel
     
     public Personaje princesaAccesible() {
         Personaje dato = (Personaje) this.getData(); 
@@ -33,7 +38,7 @@ public class ParcialBinaryTree<T> {
         return personajeEncontrado;
     }
     
-    // Métodos propios de la clase BinaryTree (en papel no haría falta escribirlos)
+    // Métodos propios de la clase BinaryTree (en papel creo que no haría falta escribirlos)
 
     public ParcialBinaryTree() {
         super();

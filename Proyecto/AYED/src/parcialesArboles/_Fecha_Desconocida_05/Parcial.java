@@ -39,7 +39,6 @@ public class Parcial {
                 encontrarCaminos(child, caminos, caminoActual); 
             }
         }
-        
         caminoActual.remove(caminoActual.size() - 1);
     }
 }
