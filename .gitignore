@@ -4,4 +4,6 @@
 /Proyecto/AYED/build/classes/tp2/otros/*
 /Proyecto/AYED/src/tp3/extra/*      
 /Proyecto/AYED/build/classes/tp3/extra/*
-/Proyecto/AYED/nbproject/private/*
+/Proyecto/AYED/nbproject
+/Proyecto/AYED/build/classes/.netbeans_automatic_build
+/Proyecto/AYED/build/classes/.netbeans_update_resources
