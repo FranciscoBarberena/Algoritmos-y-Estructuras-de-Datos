@@ -37,9 +37,7 @@ public class Parcial {
         boolean encontre = false;
         int pos = vActual.getPosition();
         marca[pos] = true;
-        
         actual.add(vActual.getData().getNombre());
-
         if (vActual == vFinal) {
             encontre = true;
             caminoSeguro.addAll(actual);
@@ -48,7 +46,6 @@ public class Parcial {
             Iterator<Edge<Ciudad>> it = ady.iterator();
             while (it.hasNext() && !encontre) {
                 Edge<Ciudad> sig = it.next();
-              
                 int w = sig.getWeight(); 
                 Vertex<Ciudad> vSig = sig.getTarget();
                 int posSig = vSig.getPosition();

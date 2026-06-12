@@ -40,6 +40,6 @@ public class Ciudad {
         if (o == null || this.getClass() != o.getClass()) return false;
         
         Ciudad c = (Ciudad) o;
-        return c.getNombre().equals(this.getNombre());
+        return c.getNombre().equals(this.getNombre()) && c.isControlled() == this.isControlled();
     }
 }
